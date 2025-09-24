@@ -15,10 +15,11 @@ public class LoginFormController {
     Stage stage = new Stage();
 
     public void btnLoginOnAction(ActionEvent actionEvent) {
+        System.out.println("Username : "+txtUsername.getText()+"\nPassword : "+txtPassword.getText());
         txtUsername.setText("");
         txtPassword.setText("");
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource(""))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/StudentManagement.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
