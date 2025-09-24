@@ -11,7 +11,7 @@ public class StudentController {
     Stage stage = new Stage();
     public void btnAddStuOnAction(ActionEvent actionEvent) {
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource(""))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/AddStudent.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
