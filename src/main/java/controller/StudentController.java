@@ -29,7 +29,7 @@ public class StudentController {
 
     public void btnDeleteStuOnAction(ActionEvent actionEvent) {
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource(""))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DeleteStudent.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
