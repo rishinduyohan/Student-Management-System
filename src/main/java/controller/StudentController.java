@@ -20,7 +20,7 @@ public class StudentController {
 
     public void btnUpdateStuOnAction(ActionEvent actionEvent) {
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource(""))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/UpdateStudent.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
